@@ -11,7 +11,7 @@ var time = new Date();
 var day = time.getDay();
 var hours = time.getHours();
 const timeMiddleware = (req, res, next) => {
-	if (day == 0 || day == 6 || (hours > 16 || hours < 9)) {
+	if (day == 0 || day == 6 || (hours > 17 || hours < 9)) {
 		res.send('Closed');
 	}
 	else {
